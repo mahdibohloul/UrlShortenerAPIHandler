@@ -93,8 +93,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'yektanetdb',
-        'USER': 'postgres',
-        'PASSWORD': 'CheersDarlin3157',
+        'USER': os.environ.get('DATABASE_USER'),
+        'PASSWORD': os.environ.get('DATABASE_PASS'),
         'HOST': 'localhost'
     }
 }
